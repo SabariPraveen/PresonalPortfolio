@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="container nav">
+    <a routerLink="/" class="logo" (click)="closeMenu()">Sabari Praveen<span>.</span></a>
+    <nav [class.open]="menuOpen()">
+      @for (l of data.links; track l.path) {
+        <a [routerLink]="l.path" routerLinkActive="active" (click)="closeMenu()">{{ l.label }}</a>
+      }
+    </nav>
+    <a routerLink="/hire" class="btn btn-primary" (click)="closeMenu()">Hire Me</a>
+    <button class="burger" type="button" aria-label="Toggle menu" (click)="toggleMenu()">☰</button>
+  </div>
+</header>
