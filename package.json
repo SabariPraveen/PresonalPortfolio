@@ -12,7 +12,7 @@
   "private": true,
   "packageManager": "npm@11.13.0",
   "engines": {
-    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+    "node": "26.0.0"
   },
   "dependencies": {
     "@angular/cdk": "^22.2.4",
